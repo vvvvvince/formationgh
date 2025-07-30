@@ -3,9 +3,12 @@ on:
   issues: 
     types: [opened, edited, milestoned]
   push: 
+  workflow_dispatch:
 jobs:
   ex1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "ouech ${{ github.actor.login }} event."
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
