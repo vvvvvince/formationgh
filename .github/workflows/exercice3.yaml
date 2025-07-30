@@ -21,7 +21,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract image name
+        id: metadata
+        run: echo "IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}" >> $GITHUB_OUTPUT
       - name: docker build
-        run: docker build -t formationgh/exercice3:latest .
+        run: docker build -t ${{ steps.metadata.outputs.IMAGE_NAME }}:latest .
       - name: docker push
-        run: docker push formationgh/exercice3:latest
+        run: docker push f${{ steps.metadata.outputs.IMAGE_NAME }}:latest
