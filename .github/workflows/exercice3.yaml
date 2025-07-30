@@ -1,5 +1,7 @@
 name: Exercice 3
 on: [push, workflow_dispatch]
+permissions:
+  packages: write
 jobs:
   ex3:
     runs-on: ubuntu-latest
