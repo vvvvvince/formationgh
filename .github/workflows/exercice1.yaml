@@ -1,0 +1,7 @@
+name: Exercice 1
+on: [push]
+jobs:
+  ex1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
