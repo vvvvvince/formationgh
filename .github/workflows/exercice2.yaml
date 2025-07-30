@@ -2,7 +2,6 @@ name: Exercice 2
 on: 
   issues: 
     types: [opened, edited, milestoned]
-  push: 
   workflow_dispatch:
 permissions:
   contents: read

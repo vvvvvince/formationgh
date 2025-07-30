@@ -1,5 +1,5 @@
 name: Exercice 1
-on: [push]
+on: [workflow_dispatch]
 jobs:
   ex1:
     runs-on: ubuntu-latest

@@ -1,0 +1,15 @@
+name: Exercice 3
+on: [push, workflow_dispatch]
+jobs:
+  ex3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ouech ${{ github.actor.login }} event."
+      - uses: actions/checkout@v3
+      - name: Set up JDK 21 for x64
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          architecture: x64
+      - name: install
+        run: mvn clean install
