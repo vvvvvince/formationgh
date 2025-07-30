@@ -1,5 +1,5 @@
 ---
 title: Gloire a satan !
-assignees: JasonEtco, matchai
+assignees: vvvvvince
 labels: bug, enhancement
 ---
