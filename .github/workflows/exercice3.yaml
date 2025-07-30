@@ -10,6 +10,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
+          distribution: 'temurin'
           architecture: x64
       - name: install
         run: mvn clean install
