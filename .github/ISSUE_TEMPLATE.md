@@ -1,4 +1,4 @@
 ---
-title: Gloire a satan !
+title: Gloire a satan
 labels: bug, enhancement
 ---

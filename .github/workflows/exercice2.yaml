@@ -5,7 +5,7 @@ on:
   push: 
   workflow_dispatch:
 jobs:
-  ex1:
+  ex2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
