@@ -28,4 +28,4 @@ jobs:
       - name: docker build
         run: docker build -t ${{ steps.metadata.outputs.IMAGE_NAME }}:latest .
       - name: docker push
-        run: docker push f${{ steps.metadata.outputs.IMAGE_NAME }}:latest
+        run: docker push ${{ steps.metadata.outputs.IMAGE_NAME }}:latest
