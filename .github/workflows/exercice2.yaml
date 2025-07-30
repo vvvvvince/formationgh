@@ -4,6 +4,9 @@ on:
     types: [opened, edited, milestoned]
   push: 
   workflow_dispatch:
+permissions:
+  contents: read
+  issues: write 
 jobs:
   ex2:
     runs-on: ubuntu-latest
