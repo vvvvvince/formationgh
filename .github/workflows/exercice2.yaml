@@ -1,5 +1,8 @@
-name: Exercice 1
-on: [push]
+name: Exercice 2
+on: 
+  issues: 
+    types: [opened, edited, milestoned]
+  push: 
 jobs:
   ex1:
     runs-on: ubuntu-latest
