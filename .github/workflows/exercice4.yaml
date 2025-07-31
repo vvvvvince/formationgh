@@ -1,8 +1,8 @@
 name: Exercice 4
 on: [push, workflow_dispatch]
 jobs:
-  ex3:
+  ex4:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        uses: .github/actions/exercice4/action.yaml
+      - name: using action
+        uses: ./.github/actions/exercice4
