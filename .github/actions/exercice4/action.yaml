@@ -1,0 +1,8 @@
+name: Exercice 4
+description: exercice4
+runs:
+  using: "composite"
+  steps:
+    - name: echo test
+      run: echo "test"
+      
