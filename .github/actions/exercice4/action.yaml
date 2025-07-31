@@ -4,5 +4,6 @@ runs:
   using: "composite"
   steps:
     - name: echo test
+      shell: bash
       run: echo "test"
       

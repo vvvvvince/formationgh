@@ -1,5 +1,5 @@
 name: Exercice 3
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 permissions:
   packages: write
 jobs:
